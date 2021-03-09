@@ -6,6 +6,10 @@ const listaUsuarios = [
     'Jailson',
     'Nykolle',
 ];
+
+app.use(express.static(__dirname + '/src/assets/img'));
+
+
 const path = require('path');
 
 //Query Params
@@ -29,6 +33,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(12345, () => {
-    console.log('Servidor rodando na porta 12345')
+app.listen(4000, () => {
+    console.log('Servidor rodando na porta 4000')
 });
